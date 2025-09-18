@@ -16,7 +16,7 @@ In this experiment the workflow look like this
 
 <img width="953" height="367" alt="image" src="https://github.com/user-attachments/assets/a09de894-2ae4-474a-b17c-f27bc9c3e274" />
 
-## Configuration 
+## Shuffle Installation / Configuration 
 Just follow official Shuffle documentation.
 ```
 git clone https://github.com/Shuffle/Shuffle
