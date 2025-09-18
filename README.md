@@ -18,8 +18,12 @@ In this experiment the workflow look like this
 <img width="953" height="367" alt="image" src="https://github.com/user-attachments/assets/a09de894-2ae4-474a-b17c-f27bc9c3e274" />
 
 
-Requirement you need Docker.
 
+
+
+## Shuffle Installation / Configuration 
+
+### Requirement : Docker and Docker compose installed
 do this to install Docker 
 
 ```
@@ -40,7 +44,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo systemctl start docker
 ```
 
-## Shuffle Installation / Configuration 
 Just follow official Shuffle documentation.
 ```
 git clone https://github.com/Shuffle/Shuffle
