@@ -20,7 +20,7 @@ sudo swapoff -a                           # Disable swap
 sudo sysctl -w vm.max_map_count=262144             # https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html
 docker-compose up -d
 ```
-Then we can access it on _https:(yourserverIP):3443_
+Then we can access it on **https://(yourserverIP):3443**
 
 
 ## 1. Integration with Virustotal
