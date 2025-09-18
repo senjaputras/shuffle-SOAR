@@ -76,3 +76,4 @@ In my experience, if we only follow guidance from the documentation, alert from 
     > debug('# Response received: %s' % res.text)
   
 That's it! Webhook will receive alert from wazuh.
+[Back to Main Page](/README.md).
