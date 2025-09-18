@@ -53,12 +53,12 @@
 In my experience, if we only follow guidance from the documentation, alert from Wazuh will never received by Webhook Shuffle.
 - We need to check /var/ossec/logs/integrations.log
 
-A good Wazuh configuration for Shuffle Integrations looks like this:
-- /tmp/shuffle-1758108926-301719090.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
-- /tmp/shuffle-1758108926--1751902450.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
-- /tmp/shuffle-1758108928--2010792349.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
+   A good Wazuh configuration for Shuffle Integrations looks like this:
+   - /tmp/shuffle-1758108926-301719090.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
+   - /tmp/shuffle-1758108926--1751902450.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
+   - /tmp/shuffle-1758108928--2010792349.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
 
-- We need to change **shuffle.py**, we can find that file on wazuh server (**/var/ossec/integrations**). We need to modify this :
+- Change **shuffle.py**, we can find that file on wazuh server (**/var/ossec/integrations**). Modify this line :
   - Line 229
   
     > _res = requests.post(url, data=msg, headers=headers, timeout=10)_
