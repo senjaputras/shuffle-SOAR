@@ -1,4 +1,4 @@
-## Integration with Virustotal
+## Shuffle Virustotal Integration
 
 1. Open you shuffle and create new workflow
    - Add Webhook node
