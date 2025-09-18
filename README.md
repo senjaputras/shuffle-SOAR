@@ -24,8 +24,59 @@ docker-compose up -d
 Then we can access it on **https://(yourserverIP):3443**
 
 
-## 1. Integration with Virustotal
-My experience if we only follow guidance from the documentation, alert from Wazuh will never received by Webhook Shuffle.
+## Integration with Virustotal
+
+1. Open you shuffle and create new workflow
+   - Add Webhook node
+   - Copy Webhook URI
+     <img width="1557" height="425" alt="image" src="https://github.com/user-attachments/assets/355457d1-63b2-4857-b64d-d2847fb4ae64" />
+
+2. Config your wazuh server
+   Edit
+   ```/var/ossec/ossec.conf```
+
+   Put this line
+   ```
+   <integration>
+      <name>shuffle</name>
+      <hook_url>https://(ShuffleIPAddress):3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx</hook_url>
+      <level>10</level>
+      <alert_format>json</alert_format>
+    </integration>
+   ```
+
+   I think you can put that anywhere, as long inside
+   ```
+   <ossec_config>
+   .....
+   </ossec_config>
+   ```
+
+   I put mine over here
+```
+  <!--
+  <active-response>
+    active-response options here
+  </active-response>
+  -->
+
+  <integration>
+    <name>shuffle</name>
+    <hook_url>https://(ShuffleIPAddress):3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx</hook_url>
+    <level>10</level>
+    <alert_format>json</alert_format>
+  </integration>
+
+  <!-- Log analysis -->
+  <localfile>
+    <log_format>command</log_format>
+    <command>df -P</command>
+    <frequency>360</frequency>
+  </localfile>
+```
+
+## IMPORTANT
+In my experience, if we only follow guidance from the documentation, alert from Wazuh will never received by Webhook Shuffle.
 - We need to check /var/ossec/logs/integrations.log
 
   Sign that your Wazuh configuration for Shuffle Integrations good is like this:
