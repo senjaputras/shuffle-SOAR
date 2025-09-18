@@ -9,7 +9,7 @@ Here are the shuffle SOAR configurations that I have tested.
 
 Outline this repo
 
-Link to the helpful section: [Installation Shuffle](##Configuration).
+Link to the helpful section: [Installation Shuffle](#Configuration).
 
 
 In this experiment the workflow look like this
