@@ -9,7 +9,7 @@ Here are the shuffle SOAR configurations that I have tested.
 
 Outline this repo
 
-Link to the helpful section: [Installation Shuffle](docs/Wazuh-Integration.md).
+Link to the helpful section: [Installation Shuffle](/Wazuh-Integration.md).
 
 
 In this experiment the workflow look like this
