@@ -5,6 +5,10 @@ This is repository for my shuffle experiment
 As we know, some open-source tools need some configuration even though they are maintained by the community.
 Here are the shuffle SOAR configurations that I have tested.
 
+In this experiment the workflow look like this
+
+<img width="953" height="367" alt="image" src="https://github.com/user-attachments/assets/a09de894-2ae4-474a-b17c-f27bc9c3e274" />
+
 
 ## 1. Integration with Virustotal
 My experience if we only follow guidance from the documentation, alert from Wazuh will never received by Webhook Shuffle.
