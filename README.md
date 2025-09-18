@@ -9,7 +9,7 @@ Here are the shuffle SOAR configurations that I have tested.
 
 Another Resouce on this repo
 
-If you can skip installation Shuffle and have trouble with some integraiton, try this:
+If you can skip installation Shuffle and have trouble with some integration, just go through this section:
 - [Wazuh Shuffle Integration](/Shuffle-Wazuh.md).
 
 
