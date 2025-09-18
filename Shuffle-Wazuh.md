@@ -2,7 +2,7 @@
 
 1. Open you shuffle and create new workflow
    - Add Webhook node
-   - Copy Webhook URI
+   - Copy Webhook URI. We will paste it later on wazuh server
      <img width="1557" height="425" alt="image" src="https://github.com/user-attachments/assets/355457d1-63b2-4857-b64d-d2847fb4ae64" />
 
 2. Config your wazuh server
@@ -53,10 +53,10 @@
 In my experience, if we only follow guidance from the documentation, alert from Wazuh will never received by Webhook Shuffle.
 - We need to check /var/ossec/logs/integrations.log
 
-  Sign that your Wazuh configuration for Shuffle Integrations good is like this:
-  - /tmp/shuffle-1758108926-301719090.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
-  - /tmp/shuffle-1758108926--1751902450.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
-  - /tmp/shuffle-1758108928--2010792349.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
+A good Wazuh configuration for Shuffle Integrations looks like this:
+- /tmp/shuffle-1758108926-301719090.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
+- /tmp/shuffle-1758108926--1751902450.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
+- /tmp/shuffle-1758108928--2010792349.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
 
 - We need to change **shuffle.py**, we can find that file on wazuh server (**/var/ossec/integrations**). We need to modify this :
   - Line 229
