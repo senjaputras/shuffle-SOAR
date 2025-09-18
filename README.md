@@ -24,7 +24,7 @@ In this experiment the workflow look like this
 ## Shuffle Installation / Configuration 
 
 ### Requirement : Docker and Docker compose installed
-do this to install Docker 
+- do this to install Docker 
 
 ```
 # Add Docker's official GPG key:
@@ -43,7 +43,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo systemctl start docker
 ```
-do this to install Docker Compose
+- do this to install Docker Compose
 
 ```
 curl -SL https://github.com/docker/compose/releases/download/v2.39.3/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
@@ -53,7 +53,7 @@ chmod +x /usr/local/bin/docker-compose
 If the command docker-compose fails after installation, check your path. You can also create a symbolic link to /usr/bin or any other directory in your path. For example:
 ```sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose```
 
-Do this to instal Shuffle
+- do this to instal Shuffle
 ```
 git clone https://github.com/Shuffle/Shuffle
 cd Shuffle
