@@ -6,6 +6,12 @@ This is repository for my shuffle experiment
 > As we know, some open-source tools **need some configuration** even though they are maintained by the community.
 Here are the shuffle SOAR configurations that I have tested.
 
+
+Outline this repo
+
+Link to the helpful section: [Installation Shuffle](##Configuration).
+
+
 In this experiment the workflow look like this
 
 <img width="953" height="367" alt="image" src="https://github.com/user-attachments/assets/a09de894-2ae4-474a-b17c-f27bc9c3e274" />
