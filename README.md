@@ -13,4 +13,21 @@ My experience if we only follow guidance from the documentation, alert from Wazu
   - /tmp/shuffle-1758108926--1751902450.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
   - /tmp/shuffle-1758108928--2010792349.alert  https://x.x.x.x:3443/api/v1/hooks/webhook_xxxx-xxxx-xxxx-xxxxxx
 
-- We need to change **shuffle.py**, we can find that file on wazuh server (**/var/ossec/integrations**)
+- We need to change **shuffle.py**, we can find that file on wazuh server (**/var/ossec/integrations**). We need to modify this :
+  - Line 229
+  
+    > _res = requests.post(url, data=msg, headers=headers, timeout=10)_
+  
+    to
+  
+    > _res = requests.post(url, data=msg, headers=headers, timeout=10,**verify=False**)_
+
+  - Line 230
+ 
+    > debug('# Response received: %s' % res.json)
+
+    to
+
+    > debug('# Response received: %s' % res.text)
+  
+That's it! Webhook will receive alert from wazuh.
