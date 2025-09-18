@@ -2,12 +2,25 @@
 
 This is repository for my shuffle experiment
 
-As we know, some open-source tools need some configuration even though they are maintained by the community.
+As we know, some open-source tools **need some configuration** even though they are maintained by the community.
 Here are the shuffle SOAR configurations that I have tested.
 
 In this experiment the workflow look like this
 
 <img width="953" height="367" alt="image" src="https://github.com/user-attachments/assets/a09de894-2ae4-474a-b17c-f27bc9c3e274" />
+
+## Configuration 
+Just follow official Shuffle documentation.
+```
+git clone https://github.com/Shuffle/Shuffle
+cd Shuffle
+mkdir shuffle-database                    # Create a database folder
+sudo chown -R 1000:1000 shuffle-database  # IF you get an error using 'chown', add the user first with 'sudo useradd opensearch'
+sudo swapoff -a                           # Disable swap
+sudo sysctl -w vm.max_map_count=262144             # https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html
+docker-compose up -d
+```
+Then we can access it on _https:(yourserverIP):3443_
 
 
 ## 1. Integration with Virustotal
