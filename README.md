@@ -2,7 +2,8 @@
 
 This is repository for my shuffle experiment
 
-As we know, some open-source tools **need some configuration** even though they are maintained by the community.
+## IMPORTANT NOTE
+> As we know, some open-source tools **need some configuration** even though they are maintained by the community.
 Here are the shuffle SOAR configurations that I have tested.
 
 In this experiment the workflow look like this
