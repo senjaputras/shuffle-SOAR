@@ -14,3 +14,10 @@ This section is step by step how to integrate OTX in Shuffle SOAR
    In my workflow, I use OTX to enrich Source IP. So I choose Get IPv4 Search.
 
 5. Put your OTX ApiKey there.
+6. In IP field you klik ⨁ symbol and will pop up to choose where is the data you want to use/enrich.
+   <img width="652" height="788" alt="Screenshot 2025-09-20 at 14 10 48" src="https://github.com/user-attachments/assets/d1cea02f-51e6-4b70-a964-8f9441b8a791" />
+
+   In this workflow, we will get the data from previous node (Get Source IP Node).
+   <img width="659" height="525" alt="image" src="https://github.com/user-attachments/assets/2c1bd6d4-d7cf-40c8-8434-32efe3a72089" />
+
+That's it!
