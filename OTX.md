@@ -9,4 +9,8 @@ This section is step by step how to integrate OTX in Shuffle SOAR
    <img width="1336" height="810" alt="image" src="https://github.com/user-attachments/assets/8de4be39-01ca-4797-8984-cc9a3c15e662" />
 
    
-3. 
+3. Choose what you want to do in Find Actions Field, there are many options what you can do.
+   <img width="652" height="788" alt="image" src="https://github.com/user-attachments/assets/f98fe3aa-3ea9-4282-8d4b-3fe71e0f65c4" />
+   In my workflow, I use OTX to enrich Source IP. So I choose Get IPv4 Search.
+
+5. Put your OTX ApiKey there.
